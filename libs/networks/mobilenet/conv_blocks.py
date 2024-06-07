@@ -18,8 +18,8 @@ import functools
 
 import tensorflow as tf
 
-slim = tf.contrib.slim
-
+#slim = tf.contrib.slim
+import tf_slim as slim
 
 def _fixed_padding(inputs, kernel_size, rate=1):
   """Pads the input along the spatial dimensions independently of input size.
