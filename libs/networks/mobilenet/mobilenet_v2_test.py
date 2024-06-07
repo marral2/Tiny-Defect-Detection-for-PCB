@@ -24,8 +24,8 @@ from nets.mobilenet import mobilenet
 from nets.mobilenet import mobilenet_v2
 
 
-slim = tf.contrib.slim
-
+#slim = tf.contrib.slim
+import tf_slim as slim
 
 def find_ops(optype):
   """Find ops of a given type in graphdef or a graph.
