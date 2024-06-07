@@ -12,7 +12,7 @@ cimport numpy as np
 # DTYPE = np.float
 # ctypedef np.float_t DTYPE_t
 DTYPE = float
-# ctypedef float_t DTYPE_t
+ctypedef float_t DTYPE_t
 
 
 def bbox_overlaps_float(
