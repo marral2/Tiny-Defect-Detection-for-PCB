@@ -4,7 +4,8 @@ from __future__ import absolute_import, division, print_function
 
 import os
 import tensorflow as tf
-import tensorflow.contrib.slim as slim
+#import tensorflow.contrib.slim as slim
+import tf_slim as slim
 import numpy as np
 
 from libs.networks import resnet
