@@ -4,7 +4,10 @@ from __future__ import absolute_import, division, print_function
 
 import os
 import tensorflow as tf
-import tensorflow.contrib.slim as slim
+
+#import tensorflow.contrib.slim as slim
+import tf_slim as slim
+
 import numpy as np
 
 from libs.networks import resnet
@@ -500,7 +503,7 @@ class DetectionNetwork(object):
         bbox_pred, cls_score = self.build_fastrcnn(P_list=P_list, rois_list=rois_list,
                                                    img_shape=img_shape)
         # bbox_pred shape: [-1, 4*(cls_num+1)].
-        # cls_score shape�?[-1, cls_num+1]
+        # cls_score shapeï¼?[-1, cls_num+1]
 
         cls_prob = slim.softmax(cls_score, 'cls_prob')
 
