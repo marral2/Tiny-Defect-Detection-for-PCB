@@ -33,8 +33,8 @@ TRAINED_CKPT = os.path.join(ROOT_PATH, 'output/trained_weights')
 
 EVALUATE_DIR = ROOT_PATH + '/output/evaluate_result_pickle/'
 #test_annotate_path = '/home/yjr/DataSet/VOC/VOC_test/VOC2007/Annotations'
-test_annotate_path = '/home/gq123/dailinhui/FPN_new/data/pcb_test/Annotations/'
-
+#test_annotate_path = '/home/gq123/dailinhui/FPN_new/data/pcb_test/Annotations/'
+test_annotate_path = '/Users/Malla/Library/Mobile Documents/com~apple~CloudDocs/Cursos/ML/Resnet/PCB_DATASET/Annotations'
 # ------------------------------------------ Train config
 RESTORE_FROM_RPN = False
 IS_FILTER_OUTSIDE_BOXES = False
