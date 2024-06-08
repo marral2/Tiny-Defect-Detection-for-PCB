@@ -1,2 +1,2 @@
-model_checkpoint_path: "/content/Tiny-Defect-Detection-for-PCB/output/trained_weights/FPN_Res101_0124_100000/pcb_30000model.ckpt"
-all_model_checkpoint_paths: "/content/Tiny-Defect-Detection-for-PCB/output/trained_weights/FPN_Res101_0124_100000/pcb_30000model.ckpt"
+model_checkpoint_path: "/content/Tiny-Defect-Detection-for-PCB/output/trained_weights/pcb_30000model.ckpt"
+all_model_checkpoint_paths: "/content/Tiny-Defect-Detection-for-PCB/output/trained_weights/pcb_30000model.ckpt"
