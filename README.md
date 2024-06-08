@@ -73,6 +73,7 @@ For Google driver: [weights](https://drive.google.com/drive/folders/1oEHrEslnM5D
 
 And then put the trained weights into 
 ```
+import os
 TRAINED_CKPT = os.path.join(ROOT_PATH, 'output/trained_weights')
 ```
 It depends on your project path. Please read '$PWD/libs/configs/cfgs.py'.
