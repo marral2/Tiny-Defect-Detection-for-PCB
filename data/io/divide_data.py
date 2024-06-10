@@ -20,11 +20,11 @@ def mkdir(path):
 divide_rate = 0.8
 
 #image_path = os.path.join(cfgs.ROOT_PATH, '{}/JPEGImages'.format(cfgs.DATASET_NAME))
-#image_path = os.path.join(cfgs.ROOT_PATH, '{}/images'.format(cfgs.DATASET_NAME))
-
+image_path = os.path.join(cfgs.ROOT_PATH, '{}/images'.format(cfgs.DATASET_NAME))
+print (image_path)
 #xml_path = os.path.join(cfgs.ROOT_PATH, '{}/Annotations'.format(cfgs.DATASET_NAME))
 xml_path = "/content/PCB_DATASET/Anotations"
-
+print ("xml1",xml_path)
 ##New code HM Jun2024
 root = "/content/PCB_DATASET/images"
 
@@ -65,6 +65,7 @@ image_output_test = os.path.join(
 mkdir(image_output_test)
 
 xml_train = os.path.join(cfgs.ROOT_PATH, '{}_train/Annotations'.format(cfgs.DATASET_NAME))
+print(xml_train)
 mkdir(xml_train)
 xml_test = os.path.join(cfgs.ROOT_PATH, '{}_test/Annotations'.format(cfgs.DATASET_NAME))
 mkdir(xml_test)
@@ -81,6 +82,7 @@ for i in train_image:
 
 for i in test_image:
   shutil.copy(os.path.join(image_path, i + '.jpg'), image_output_test)
+  print("xmlpath3:",xmlpath)
   shutil.copy(os.path.join(xml_path, i + '.xml'), xml_test)
   if count % 1000 == 0:
     print("process step {}".format(count))
