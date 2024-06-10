@@ -20,11 +20,33 @@ def mkdir(path):
 divide_rate = 0.8
 
 #image_path = os.path.join(cfgs.ROOT_PATH, '{}/JPEGImages'.format(cfgs.DATASET_NAME))
-image_path = os.path.join(cfgs.ROOT_PATH, '{}/images'.format(cfgs.DATASET_NAME))
+#image_path = os.path.join(cfgs.ROOT_PATH, '{}/images'.format(cfgs.DATASET_NAME))
 
-xml_path = os.path.join(cfgs.ROOT_PATH, '{}/Annotations'.format(cfgs.DATASET_NAME))
+#xml_path = os.path.join(cfgs.ROOT_PATH, '{}/Annotations'.format(cfgs.DATASET_NAME))
+xml_path = "/content/PCB_DATASET/Anotations"
 
-image_list = os.listdir(image_path)
+##New code HM Jun2024
+root = "/content/PCB_DATASET/images"
+
+def get_files_from_subfolders(root_dir):
+  """
+  Returns a list of all files in all subfolders of a given root directory.
+
+  Args:
+    root_dir: The root directory to search.
+
+  Returns:
+    A list of file paths.
+  """
+
+  file_list = []
+  for dirpath, dirnames, filenames in os.walk(root_dir):
+    for filename in filenames:
+      file_list.append(os.path.join(dirpath, filename))
+  return file_list
+
+#image_list = os.listdir(image_path)
+image_list = get_files_from_subfolders(root)
 
 image_name = [n.split('.')[0] for n in image_list]
 
@@ -38,7 +60,8 @@ image_output_train = os.path.join(
     cfgs.ROOT_PATH, '{}_train/images'.format(cfgs.DATASET_NAME))
 mkdir(image_output_train)
 image_output_test = os.path.join(
-    cfgs.ROOT_PATH, '{}_test/JPEGImages'.format(cfgs.DATASET_NAME))
+    #cfgs.ROOT_PATH, '{}_test/JPEGImages'.format(cfgs.DATASET_NAME))
+     cfgs.ROOT_PATH, '{}_test/images'.format(cfgs.DATASET_NAME))
 mkdir(image_output_test)
 
 xml_train = os.path.join(cfgs.ROOT_PATH, '{}_train/Annotations'.format(cfgs.DATASET_NAME))
