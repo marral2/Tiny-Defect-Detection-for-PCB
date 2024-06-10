@@ -61,7 +61,8 @@ DECAY_STEP = [10000, 20000]  # 50000, 70000
 MAX_ITERATION = 30000
 
 # ------------------------------------------- Data_preprocess_config
-DATASET_NAME = 'pcb'  # 'ship', 'spacenet', 'pascal', 'coco'
+#DATASET_NAME = 'pcb'  # 'ship', 'spacenet', 'pascal', 'coco'
+DATASET_NAME = 'PCB_DATASET'  # 'ship', 'spacenet', 'pascal', 'coco'
 # PIXEL_MEAN = [123.68, 116.779, 103.939]  # R, G, B. In tf, channel is RGB. In openCV, channel is BGR
 PIXEL_MEAN = [21.25, 85.936, 28.729]
 IMG_SHORT_SIDE_LEN =  600  # 600
