@@ -19,7 +19,9 @@ def mkdir(path):
 
 divide_rate = 0.8
 
-image_path = os.path.join(cfgs.ROOT_PATH, '{}/JPEGImages'.format(cfgs.DATASET_NAME))
+#image_path = os.path.join(cfgs.ROOT_PATH, '{}/JPEGImages'.format(cfgs.DATASET_NAME))
+image_path = os.path.join(cfgs.ROOT_PATH, '{}/images'.format(cfgs.DATASET_NAME))
+
 xml_path = os.path.join(cfgs.ROOT_PATH, '{}/Annotations'.format(cfgs.DATASET_NAME))
 
 image_list = os.listdir(image_path)
@@ -32,7 +34,8 @@ train_image = image_name[:int(math.ceil(len(image_name)) * divide_rate)]
 test_image = image_name[int(math.ceil(len(image_name)) * divide_rate):]
 
 image_output_train = os.path.join(
-    cfgs.ROOT_PATH, '{}_train/JPEGImages'.format(cfgs.DATASET_NAME))
+    #cfgs.ROOT_PATH, '{}_train/JPEGImages'.format(cfgs.DATASET_NAME))
+    cfgs.ROOT_PATH, '{}_train/images'.format(cfgs.DATASET_NAME))
 mkdir(image_output_train)
 image_output_test = os.path.join(
     cfgs.ROOT_PATH, '{}_test/JPEGImages'.format(cfgs.DATASET_NAME))
