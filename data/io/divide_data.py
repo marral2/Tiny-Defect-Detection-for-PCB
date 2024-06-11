@@ -23,8 +23,8 @@ divide_rate = 0.8
 image_path = os.path.join(cfgs.ROOT_PATH, '{}/images'.format(cfgs.DATASET_NAME))
 print (image_path)
 #xml_path = os.path.join(cfgs.ROOT_PATH, '{}/Annotations'.format(cfgs.DATASET_NAME))
-xml_path = "/content/PCB_DATASET/Anotations"
-print ("xml1",xml_path)
+xml_path = "/content/PCB_DATASET/Annotations"
+
 ##New code HM Jun2024
 root = "/content/PCB_DATASET/images"
 
