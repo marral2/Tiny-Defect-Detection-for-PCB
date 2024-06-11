@@ -10,13 +10,20 @@ import cv2
 from libs.label_name_dict.label_dict import *
 from help_utils.tools import *
 
-tf.app.flags.DEFINE_string('VOC_dir', '/home/gq123/dailinhui/FPN_dlh/data/pcb_test/', 'Voc dir')
+#tf.app.flags.DEFINE_string('VOC_dir', '/home/gq123/dailinhui/FPN_dlh/data/pcb_test/', 'Voc dir')
+#tf.app.flags.DEFINE_string('xml_dir', 'Annotations', 'xml dir')
+#tf.app.flags.DEFINE_string('image_dir', 'JPEGImages', 'image dir')
+#tf.app.flags.DEFINE_string('save_name', 'test', 'save name')
+#tf.app.flags.DEFINE_string('save_dir', '../tfrecord/', 'save name')
+#tf.app.flags.DEFINE_string('img_format', '.jpg', 'format of image')
+#tf.app.flags.DEFINE_string('dataset', 'pcb', 'dataset')
+tf.app.flags.DEFINE_string('VOC_dir', '/Tiny-Defect-Detection-for-PCB/data/PCB_DATASET_test/', 'Voc dir')
 tf.app.flags.DEFINE_string('xml_dir', 'Annotations', 'xml dir')
-tf.app.flags.DEFINE_string('image_dir', 'JPEGImages', 'image dir')
+tf.app.flags.DEFINE_string('image_dir', 'images', 'image dir')
 tf.app.flags.DEFINE_string('save_name', 'test', 'save name')
 tf.app.flags.DEFINE_string('save_dir', '../tfrecord/', 'save name')
 tf.app.flags.DEFINE_string('img_format', '.jpg', 'format of image')
-tf.app.flags.DEFINE_string('dataset', 'pcb', 'dataset')
+tf.app.flags.DEFINE_string('dataset', 'PCB_DATASET', 'dataset')
 FLAGS = tf.app.flags.FLAGS
 
 
