@@ -5,6 +5,7 @@ sys.path.append('../../')
 import xml.etree.cElementTree as ET
 import numpy as np
 import tensorflow as tf
+import tensorflow.compat.v1 as tf   #new code for compatibility
 import glob
 import cv2
 from libs.label_name_dict.label_dict import *
