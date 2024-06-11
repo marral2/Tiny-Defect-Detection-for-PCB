@@ -76,7 +76,7 @@ elif cfgs.DATASET_NAME == 'pascal':
         'tvmonitor': 20
     }
 #elif cfgs.DATASET_NAME == 'pcb':
-elif cfgs.DATASET_NAME == 'pcb':
+elif cfgs.DATASET_NAME == 'PCB_DATASET':
     NAME_LABEL_MAP = {
         'back_ground': 0,
         'missing_hole': 1,
