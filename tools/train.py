@@ -10,7 +10,8 @@ import tf_slim as slim
 import os, sys
 import numpy as np
 import time
-sys.path.append("../")
+#sys.path.append("../")
+sys.path.append("..")
 
 from libs.configs import cfgs
 # from libs.networks import build_whole_network2
