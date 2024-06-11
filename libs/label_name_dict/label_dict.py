@@ -75,6 +75,7 @@ elif cfgs.DATASET_NAME == 'pascal':
         'train': 19,
         'tvmonitor': 20
     }
+#elif cfgs.DATASET_NAME == 'pcb':
 elif cfgs.DATASET_NAME == 'pcb':
     NAME_LABEL_MAP = {
         'back_ground': 0,
