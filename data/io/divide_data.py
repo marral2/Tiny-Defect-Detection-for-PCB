@@ -76,7 +76,7 @@ for i in train_image:
   shutil.copy(os.path.join(image_path, i + '.jpg'), image_output_train)
   split_sentence = i.split("/")
   i_xml = "/".join(split_sentence[4:])
-  if os.path.exists(os.path.join(xml_path, i + '.xml')):
+  if os.path.exists(os.path.join(xml_path, i_xml + '.xml')):
     shutil.copy(os.path.join(xml_path, i_xml + '.xml'), xml_train)
   if count % 1000 == 0:
     print("process step {}".format(count))
